@@ -11,7 +11,7 @@ wifi_interface="wlan0" #change that to your personal needs (output of 'ip -a')
 ssid="xxxx" #personal settings for default connection
 passwd="xxxx"
 
-if [ -z "$1" ]; then
+if [ -z $1 ]; then
 	echo -n "setting up wifi..."
 	out=$(nmcli device wifi connect "$ssid" password "$passwd")
 	echo -n -e "${CGREEN2}${CBOLD}done!${CEND}\n"
