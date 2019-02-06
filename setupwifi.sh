@@ -8,8 +8,8 @@ CEND='\033[0m'
 
 wifi_interface="wlan0" #change that to your personal needs (output of 'ip -a')
 
-ssid="FRITZ!Box 7490" #personal settings for default connection
-passwd="91151209986001541952"
+ssid="xxxx" #personal settings for default connection
+passwd="xxxx"
 
 if [ -z "$1" ]; then
 	echo -n "setting up wifi..."
@@ -63,7 +63,7 @@ elif [ "$1" == "-d" -o "$1" == "--disconnect" ]; then
 	exit
 
 elif [ "$1" == "-h" -o "$1" == "--help" ]; then
-	echo -n -e "\n${CITALIC}Simple Interface for nmcli!${CEND}\n\n"
+	echo -n -e "\n${CITALIC}Simple wrapper for nmcli!${CEND}\n\n"
 	echo -n -e "${CBOLD}USAGE:${CEND}\n"
 	echo -e "setupwifi [OPTIONS]\n\n"
 	echo -n -e "${CBOLD}Options:${CEND}\n"
